@@ -129,6 +129,22 @@
                 "text": "Contáctanos",
                 "href": "/contacto/"
             }
+        },
+        "package": {
+            "title": "20 años de experiencia en hoteles y resorts.",
+            "textUp": "Descubre nuestras ubicaciones",
+            "text": "Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.",
+            "items": [
+                "Hacemos lo mejor para todos nuestros clientes",
+                "Sigue nuestros Resorts Luxury Hotels",
+                "Hoteles de lujo y mejores resorts",
+                "Habitaciones dobles y familiares",
+                "Disfruta de una experiencia de lujo"
+            ],
+            "button": {
+                "text": "Revisas nuestros paquetes",
+                "href": "/nosotros/"
+            }
         }
     }
 }

@@ -129,6 +129,25 @@
                 "text": "Contact us",
                 "href": "/contacto/"
             }
+        },
+        "package": {
+            "title": "20 Years of Hotels and Resort Experience",
+            "textUp": "Discover our Locations",
+            "text": "Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.",
+            "items": [
+                "We make the best for all our customers",
+                "Follow our Resort Luxury Hotels",
+                "Luxury hotels and best resorts",
+                "Double rooms and family rooms",
+                "Enjoy a luxury experience"
+            ],
+            "button": {
+                "text": "Check All Packages",
+                "href": "/nosotros/"
+            }
         }
+    },
+    "about": {
+        "title": "About us"
     }
 }

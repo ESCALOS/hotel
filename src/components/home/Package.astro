@@ -1,0 +1,64 @@
+---
+import { Image } from "astro:assets";
+import ImageVideo from "@/images/videobg.jpg";
+import { getI18N } from "@/i18n";
+import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const data = i18n.home.package;
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+---
+
+<section class="w3l-index3">
+  <div class="midd-w3 py-5">
+    <div class="container py-lg-5 py-md-3">
+      <div class="row">
+        <div class="col-lg-6 left-wthree-img text-righ">
+          <div class="position-relative">
+            <Image src={ImageVideo} alt="" class="img-fluid" />
+            <a
+              href="#small-dialog"
+              class="popup-with-zoom-anim play-view text-center position-absolute"
+            >
+              <span class="video-play-icon">
+                <span class="fa fa-play"></span>
+              </span>
+            </a>
+            <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+              <iframe
+                src="https://player.vimeo.com/video/246941769"
+                allow="autoplay; fullscreen"
+                allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-lg-0 mt-5 about-right-faq align-self">
+          <h6>{data.textUp}</h6>
+          <h3 class="title-big">{data.title}</h3>
+          <p class="mt-3">
+            {data.text}
+          </p>
+          <ul class="w3l-right-book mt-4">
+            {
+              data.items.map((item) => (
+                <li>
+                  <span class="fa fa-check" aria-hidden="true" />
+                  {item}
+                </li>
+              ))
+            }
+          </ul>
+          <a
+            href={translatePath(data.button.href)}
+            class="btn btn-style btn-primary mt-4"
+          >
+            {data.button.text}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

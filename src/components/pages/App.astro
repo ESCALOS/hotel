@@ -2,12 +2,13 @@
 import Layout from "@/layouts/Layout.astro";
 
 import { getI18N } from "@/i18n";
+import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
 import MainSlider from "../home/MainSlider.astro";
 import Availabiliy from "../home/Availabiliy.astro";
 import About from "../home/About.astro";
-import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
 import BestRooms from "../home/BestRooms.astro";
 import Quotation from "../home/Quotation.astro";
+import Package from "../home/Package.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
@@ -22,4 +23,5 @@ const translatePath = useTranslatedPath(lang);
   <About href={translatePath("/servicios/")} />
   <BestRooms />
   <Quotation />
+  <Package />
 </Layout>
