@@ -1,0 +1,52 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import NavbarToggle from "./NavbarToggle.astro";
+import { Image } from "astro:assets";
+import BrandImage from "@/images/logo.png";
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<header class="w3l-header-nav">
+  <nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+    <div class="container">
+      <a class="navbar-brand" href={translatePath("/")}>
+        <Image
+          src={BrandImage}
+          alt="Casa de Marlon y Karina - Logo Full"
+          height={65}
+          width={110}
+        />
+      </a>
+      <NavbarToggle />
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <HeaderLink name={t("nav.inicio")} href={translatePath("/")} />
+          <HeaderLink
+            name={t("nav.nosotros")}
+            href={translatePath("/nosotros/")}
+          />
+          <HeaderLink
+            name={t("nav.servicios")}
+            href={translatePath("/servicios/")}
+          />
+          <HeaderLink
+            name={t("nav.contacto")}
+            href={translatePath("/contacto/")}
+          />
+        </ul>
+        <a href="#booking" class="ml-3 book btn btn-secondary btn-style"
+          >{t("nav.reserva_ahora")}</a
+        >
+      </div>
+    </div>
+  </nav>
+</header>

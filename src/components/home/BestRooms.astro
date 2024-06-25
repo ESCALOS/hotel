@@ -1,0 +1,65 @@
+---
+import { getI18N } from "@/i18n";
+import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
+import { Image } from "astro:assets";
+import Room1 from "@/images/room1.jpg";
+import ImageRoom from "./ImageRoom.astro";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const data = i18n.home.bestRooms;
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+---
+
+<div class="best-rooms py-5">
+  <div class="container py-lg-5 py-sm-4">
+    <h3 class="title-big text-center">{data.title}</h3>
+    <div class="ban-content-inf row py-lg-3">
+      <div class="maghny-gd-1 col-lg-6">
+        <div class="maghny-grid">
+          <figure class="effect-lily">
+            <Image src={Room1} alt="" class="img-fluid" />
+            <figcaption class="w3set-hny">
+              <div>
+                <h4 class="top-text">
+                  {data.mainRoom.title}
+                  <span>{data.mainRoom.description}</span>
+                </h4>
+                <p>{data.mainRoom.price}</p>
+              </div>
+            </figcaption>
+          </figure>
+          <div class="room-info">
+            <h3 class="room-title">
+              <a href="room-single.html">{data.mainRoom.title}</a>
+            </h3>
+            <ul class="mb-3">
+              {
+                data.mainRoom.tags.map((tag) => (
+                  <li>
+                    <span class:list={["fa", tag.icon]} />
+                    {tag.title}
+                  </li>
+                ))
+              }
+            </ul>
+            <p>
+              {data.mainRoom.text}
+            </p>
+            <a
+              href={translatePath(data.mainRoom.button.href)}
+              class="btn btn-style btn-primary mt-sm-4 mt-3"
+              >{data.mainRoom.button.text}</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="maghny-gd-1 col-lg-6 mt-lg-0 mt-4">
+        <div class="row">
+          {data.rooms.map((room) => <ImageRoom room={room} />)}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

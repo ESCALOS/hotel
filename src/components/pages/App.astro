@@ -1,0 +1,25 @@
+---
+import Layout from "@/layouts/Layout.astro";
+
+import { getI18N } from "@/i18n";
+import MainSlider from "../home/MainSlider.astro";
+import Availabiliy from "../home/Availabiliy.astro";
+import About from "../home/About.astro";
+import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
+import BestRooms from "../home/BestRooms.astro";
+import Quotation from "../home/Quotation.astro";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+---
+
+<Layout title={i18n.META_TITLE} description={i18n.META_DESCRIPTION}>
+  <MainSlider />
+  <Availabiliy />
+  <About href={translatePath("/servicios/")} />
+  <BestRooms />
+  <Quotation />
+</Layout>

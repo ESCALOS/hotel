@@ -1,0 +1,71 @@
+---
+import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
+import { getI18N } from "@/i18n";
+import MainSliderItem from "./MainSliderItem.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(lang);
+
+interface Carousel {
+  title: string;
+  button: string;
+  href: string;
+  imageClass: string;
+}
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const data: Carousel[] = i18n.home.mainSlider.images;
+---
+
+<section class="w3l-main-slider" id="home">
+  <div class="companies20-content">
+    <div class="owl-one owl-carousel owl-theme">
+      {
+        data.map((item) => (
+          <MainSliderItem
+            title={item.title}
+            button={item.button}
+            href={translatePath(item.href)}
+            imageClass={item.imageClass}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script is:inline src="/src/scripts/jquery-3.3.1.min.js"></script>
+<script is:inline src="/src/scripts/owl.carousel.js"></script>
+<script is:inline data-astro-rerun>
+  $(document).ready(function () {
+    $(".owl-one").owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false,
+        },
+        480: {
+          items: 1,
+          nav: false,
+        },
+        667: {
+          items: 1,
+          nav: true,
+        },
+        1000: {
+          items: 1,
+          nav: true,
+        },
+      },
+    });
+  });
+</script>

@@ -1,0 +1,30 @@
+<move-top>
+  <button id="movetop" title="Go to top"> &#10548; </button>
+</move-top>
+<script>
+  class MoveTop extends HTMLElement {
+    constructor() {
+      super();
+
+      const moveTopButton = this.querySelector("button");
+      moveTopButton?.addEventListener("click", () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+    }
+  }
+  window.onscroll = function () {
+    const moveTop = document.getElementById("movetop");
+    if (moveTop) {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        moveTop.style.display = "block";
+      } else {
+        moveTop.style.display = "none";
+      }
+    }
+  };
+  customElements.define("move-top", MoveTop);
+</script>

@@ -1,0 +1,37 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+interface Props {
+  room: {
+    id: number;
+    title: string;
+    price: string;
+    imagePath: string;
+  };
+  otherClasses?: string;
+}
+const {
+  room: { id, title, price, imagePath },
+} = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/images/*.{jpg,jpeg,png}"
+);
+if (!images[imagePath])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/images/*.{jpg,jpeg,png}"`
+  );
+---
+
+<div class:list={["maghny-gd-1 col-6", id > 2 ? "mt-4" : ""]}>
+  <div class="maghny-grid">
+    <figure class="effect-lily border-radius">
+      <Image src={images[imagePath]()} alt="" class="img-fluid" />
+      <figcaption>
+        <div>
+          <h4>{title}</h4>
+          <p>{price}</p>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+</div>

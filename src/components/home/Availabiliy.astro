@@ -1,0 +1,80 @@
+---
+import { getI18N } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const data = i18n.home.availability;
+---
+
+<section class="w3l-availability-form" id="booking">
+  <div class="w3l-availability-form-main py-5">
+    <div class="container pt-lg-3 pb-lg-5">
+      <div class="forms-top">
+        <div class="form-right">
+          <div class="form-inner-cont">
+            <h3 class="title-small">{data.title}</h3>
+            <form
+              action="search-results.html"
+              method="post"
+              class="signin-form"
+            >
+              <div class="row book-form">
+                <div class="form-input col-md-4 col-sm-6 mt-3">
+                  <label>{data.form.checkin.title}</label>
+                  <input
+                    type="date"
+                    name="checkin"
+                    placeholder={data.form.checkin.placeholder}
+                    required
+                  />
+                </div>
+                <div class="form-input col-md-4 col-sm-6 mt-3">
+                  <label>{data.form.checkout.title}</label>
+                  <input
+                    type="date"
+                    name="checkout"
+                    placeholder={data.form.checkout.placeholder}
+                    required
+                  />
+                </div>
+                <div class="form-input col-md-4 col-sm-6 mt-3">
+                  <label>{data.form.adults.title}</label>
+                  <select class="selectpicker" name="adults">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                  </select>
+                </div>
+                <div class="form-input col-md-4 col-sm-6 mt-3">
+                  <label>{data.form.children.title}</label>
+                  <select class="selectpicker" name="children">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                  </select>
+                </div>
+                <div class="form-input col-md-4 col-sm-6 mt-3">
+                  <label>{data.form.price.title}</label>
+                  <input
+                    type="text"
+                    name="max_price"
+                    placeholder={data.form.price.placeholder}
+                    required
+                  />
+                </div>
+                <div class="bottom-btn col-md-4 col-sm-6 mt-3">
+                  <label>{data.button.title}</label>
+                  <button class="btn btn-style btn-primary w-100 px-2"
+                    >{data.button.text}</button
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

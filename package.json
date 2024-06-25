@@ -1,0 +1,19 @@
+{
+  "name": "hotel",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "astro": "^4.11.0",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1",
+    "typescript": "^5.5.2"
+  }
+}

@@ -1,0 +1,134 @@
+{
+    "META_TITLE": "Casa de Marlon y Karina - Tarapoto",
+    "META_DESCRIPTION": "Reserve en línea con seguridad en Casa de Marlon y Karina - Tarapoto con tarifas rebajadas",
+    "GO_TO_TOP": "Ir al principio",
+    "home": {
+        "about": {
+            "title": "Relajese en nuestro Resort",
+            "subtitle": "Ofrecemos los mejor para nuestros clientes.",
+            "description": "Un texto en español",
+            "button": "Ver más"
+        },
+        "mainSlider": {
+            "images": [
+                {
+                    "title":
+                      "La ubicación es paradisíaca. Lo mejor es visitarla entre semana para disfrutar de su belleza pacífica.",
+                    "button": "Nuestros servicios",
+                    "href": "/servicios/",
+                    "imageClass": ""
+                  },
+                  {
+                    "title":
+                      "Nuestros nuevos hoteles desempeñarán un papel destacado en el impulso de la paz mundial.",
+                    "button": "Nuestros servicios",
+                    "href": "/servicios/",
+                    "imageClass": "banner-top1"
+                  },
+                  {
+                    "title":
+                      "La mayoría de los hoteles capacitan a su personal con los folletos. Nosotros llevamos a los nuestros al ballet.",
+                    "button": "Nuestros servicios",
+                    "href": "/servicios/",
+                    "imageClass": "banner-top2"
+                  },
+                  {
+                    "title":
+                      "El buen turismo se acompaña de buenos hoteles. Disfrute de nuestras habitaciones de hotel de lujo",
+                    "button": "Nuestros servicios",
+                    "href": "/servicios/",
+                    "imageClass": "banner-top3"
+                  }
+            ]
+        },
+        "availability": {
+            "title": "Verificar Disponibilidad",
+            "form": {
+                "checkin": {
+                    "title": "Fecha de Ingreso",
+                    "placeholder": "Date"
+                },
+                "checkout": {
+                    "title": "Fecha de Salida",
+                    "placeholder": "Date"
+                },
+                "adults": {
+                    "title": "Adultos",
+                    "placeholder": ""
+                },
+                "children": {
+                    "title": "Niños",
+                    "placeholder": ""
+                },
+                "price": {
+                    "title": "Precio",
+                    "placeholder": "Precio Max(S/.)"
+                }
+            },
+            "button": {
+                "title": "Verificar Disponibilidad",
+                "text": "Verificar Disponibilidad"
+            }
+        },
+        "bestRooms": {
+            "title": "Mejores habitaciones",
+            "mainRoom": {
+                "title": "Hotel de lujo",
+                "description": "Hotel de lujo y el mejor resort, un lugar tranquilo para hospedarse",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A recusandae, illum sequi numquam tempora voluptates?",
+                "price": "desde 20$",
+                "tags": [
+                    {
+                        "title": "2 personas",
+                        "icon": "fa-users"
+                    },
+                    {
+                        "title": "2 camas",
+                        "icon": "fa-bed"
+                    }
+                ],
+                "button": {
+                    "text": "Reserva ahora",
+                    "href": "/contacto/"
+                }
+            },
+            "rooms": [
+                {
+                    "id": 1,
+                    "title": "Habitación familiar",
+                    "price": "desde 20$",
+                    "imagePath": "/src/images/room2.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Habitación doble",
+                    "price": "desde 20$",
+                    "imagePath": "/src/images/room3.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Habitación lujosa",
+                    "price": "desde 20$",
+                    "imagePath": "/src/images/room4.jpg"
+                },
+                {
+                    "id": 4,
+                    "title": "Habitación de descanso",
+                    "price": "desde 20$",
+                    "imagePath": "/src/images/room5.jpg"
+                }
+            ]
+        },
+        "quotation": {
+            "text": "Disfruta de una experiencia de lujo. Descubre nuestras ubicaciones. Relájate y disfruta de tus vacaciones.",
+            "buttonBook": {
+                "text": "Reserva ahora",
+                "href": "/contacto/"
+            },
+            "buttonContactUs": {
+                "text": "Contáctanos",
+                "href": "/contacto/"
+            }
+        }
+    }
+}

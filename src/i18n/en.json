@@ -1,0 +1,134 @@
+{
+    "META_TITLE": "Casa de Marlon y Karina - Tarapoto",
+    "META_DESCRIPTION": "Book online safely at Casa de Marlon y Karina with discounted rates. We offer the best accommodation in Tarapoto. Cheapest rates available directly from us!",
+    "GO_TO_TOP": "Go to top",
+    "home": {
+        "about": {
+            "title": "Relax in our Resort",
+            "subtitle": "We make the best for all our customers.",
+            "description": "aliquet leo. Mauris hendrerit vel ex. Quisque vitae luctus massa. Phasellus sed aliquam leo. Vestibulum ullamcorper a massa eu fringilla. Integer ultrices finibus sed nisi. in convallis felis dapibus sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, porro! Lorem ipsum dolor sit amet.",
+            "button": "Learn About Us"
+        },
+        "mainSlider": {
+            "images": [
+                {
+                    "title":
+                      "Location is heavenly. Best to visit in week days to enjoy the peaceful beauty",
+                    "button": "Our Services",
+                    "href": "/servicios/",
+                    "imageClass": ""
+                  },
+                  {
+                    "title":
+                      "Our new hotels will play a leading role in prompting the world peace.",
+                    "button": "Our Services",
+                    "href": "/servicios/",
+                    "imageClass": "banner-top1"
+                  },
+                  {
+                    "title":
+                      "Most hotels train their people with the booklets. We take ours to the ballet.",
+                    "button": "Our Services",
+                    "href": "/servicios/",
+                    "imageClass": "banner-top2"
+                  },
+                  {
+                    "title":
+                      "Good tourism will follow good hotels. Experience our luxury hotel rooms",
+                    "button": "Our Services",
+                    "href": "/servicios/",
+                    "imageClass": "banner-top3"
+                  }
+            ]
+        },
+        "availability": {
+            "title": "Check Availability",
+            "form": {
+                "checkin": {
+                    "title": "Check-in Date",
+                    "placeholder": "Date"
+                },
+                "checkout": {
+                    "title": "Check-out Date",
+                    "placeholder": "Date"
+                },
+                "adults": {
+                    "title": "Adults",
+                    "placeholder": ""
+                },
+                "children": {
+                    "title": "Children",
+                    "placeholder": ""
+                },
+                "price": {
+                    "title": "Price",
+                    "placeholder": "Max Price($)"
+                }
+            },
+            "button": {
+                "title": "Check Availability",
+                "text": "Check Availability"
+            }
+        },
+        "bestRooms": {
+            "title": "Best Rooms",
+            "mainRoom": {
+                "title": "Luxury Hotel",
+                "description": "Luxury Hotel And Best Resort Peaceful Place To Stay",
+                "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A recusandae, illum sequi numquam tempora voluptates?",
+                "price": "from 20$",
+                "tags": [
+                    {
+                        "title": "2 guests",
+                        "icon": "fa-users"
+                    },
+                    {
+                        "title": "Double bed",
+                        "icon": "fa-bed"
+                    }
+                ],
+                "button": {
+                    "text": "Reserva ahora",
+                    "href": "/contacto/"
+                }
+            },
+            "rooms": [
+                {
+                    "id": 1,
+                    "title": "Habitación familiar",
+                    "price": "desde 20$",
+                    "imagePath": "/src/images/room2.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Habitación doble",
+                    "price": "desde 20$",
+                    "imagePath": "/src/images/room3.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Habitación lujosa",
+                    "price": "desde 20$",
+                    "imagePath": "/src/images/room4.jpg"
+                },
+                {
+                    "id": 4,
+                    "title": "Habitación de descanso",
+                    "price": "desde 20$",
+                    "imagePath": "/src/images/room5.jpg"
+                }
+            ]
+        },
+        "quotation": {
+            "text": "Enjoy a Luxury experience. Discover our locaions. Relax and enjoy your holiday.",
+            "buttonBook": {
+                "text": "Book now",
+                "href": "/contacto/"
+            },
+            "buttonContactUs": {
+                "text": "Contact us",
+                "href": "/contacto/"
+            }
+        }
+    }
+}
