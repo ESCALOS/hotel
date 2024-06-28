@@ -1,0 +1,36 @@
+---
+interface Props {
+  features: {
+    title: string;
+    items: {
+      id: number;
+      title: string;
+      description: string;
+      icon: string;
+    }[];
+  };
+}
+import FeatureItem from "./FeatureItem.astro";
+
+const {
+  features: { title, items },
+} = Astro.props;
+---
+
+<section class="w3-about-2" id="features">
+  <div class="w3-services-ab py-5">
+    <div class="container py-lg-4 py-md-3">
+      <div class="title-section">
+        <div class="title-line"></div>
+      </div>
+      <div class="row w3-services-grids">
+        <div class="col-lg-9 w3-services-right-grid pl-lg-5 mx-auto">
+          <h4 class="mb-md-5 mb-4">{title}</h4>
+          <div class="fea-gd-vv row">
+            {items.map((item) => <FeatureItem feature={item} />)}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,5 +1,7 @@
 import { defineConfig } from "astro/config";
 
+import react from "@astrojs/react";
+
 // https://astro.build/config
 export default defineConfig({
   site: "http://localhost:4321",
@@ -7,8 +9,8 @@ export default defineConfig({
     defaultLocale: "es",
     locales: ["es", "en"],
     routing: {
-      prefixDefaultLocale: false,
-    },
+      prefixDefaultLocale: false
+    }
   },
-  integrations: [],
+  integrations: [react()]
 });

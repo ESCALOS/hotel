@@ -13,31 +13,38 @@
             "images": [
                 {
                     "title":
-                      "La ubicación es paradisíaca. Lo mejor es visitarla entre semana para disfrutar de su belleza pacífica.",
+                      "Inspirados en una casa de campo, minimalista y exponiendo la naturalidad de sus materiales",
                     "button": "Nuestros servicios",
                     "href": "/servicios/",
                     "imageClass": ""
                   },
                   {
                     "title":
-                      "Nuestros nuevos hoteles desempeñarán un papel destacado en el impulso de la paz mundial.",
+                      "A solo ocho minutos del centro de la ciudad.",
                     "button": "Nuestros servicios",
                     "href": "/servicios/",
                     "imageClass": "banner-top1"
                   },
                   {
                     "title":
-                      "La mayoría de los hoteles capacitan a su personal con los folletos. Nosotros llevamos a los nuestros al ballet.",
+                      "Con cinco amplias habitaciones, un tranquilo y acogedor jardín, una amplia sala, comedor y cocina.",
                     "button": "Nuestros servicios",
                     "href": "/servicios/",
                     "imageClass": "banner-top2"
                   },
                   {
                     "title":
-                      "El buen turismo se acompaña de buenos hoteles. Disfrute de nuestras habitaciones de hotel de lujo",
+                      "Ofrecemos un hábitat espacioso, tranquilo y fresco, rodeado de vegetación colindante con el área de conservación natural cordillera La Escalera.",
                     "button": "Nuestros servicios",
                     "href": "/servicios/",
                     "imageClass": "banner-top3"
+                  },
+                  {
+                    "title":
+                      "Ofrecemos un hábitat espacioso, tranquilo y fresco, rodeado de vegetación colindante con el área de conservación natural cordillera La Escalera.",
+                    "button": "Nuestros servicios",
+                    "href": "/servicios/",
+                    "imageClass": "banner-top4"
                   }
             ]
         },
@@ -145,6 +152,165 @@
                 "text": "Revisas nuestros paquetes",
                 "href": "/nosotros/"
             }
+        }
+    },
+    "about": {
+        "bestRoom": {
+            "title": "Best luxury Hotel in London since 2000. Our hotel has been present for over 20 years.",
+            "text1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore sapiente, distinctio perferendis voluptas consequatur quaerat incidunt. Similique, officia! Dolorum fugiat et aliquam necessitatibus quas reiciendis, totam voluptatibus deleniti tempore doloribus dolor modi, ab facilis quam officiis ipsam doloremque.",
+            "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veritatis incidunt iste totam, consequuntur minus assumenda commodi sint asperiores. Voluptatibus incidunt alias.",
+            "rooms": [
+                {
+                    "id": 1,
+                    "title": "Top Restaurant",
+                    "subtitle": "Breakfast and Dinner",
+                    "imagePath": "/src/images/about1.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Spa and Wellness",
+                    "subtitle": "Open Daily",
+                    "imagePath": "/src/images/about2.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Best Luxury Rooms",
+                    "subtitle": "Cool view",
+                    "imagePath": "/src/images/about3.jpg"
+                }
+            ]
+        },
+        "features": {
+            "title": "Doing the right thing, at the right time",
+            "items": [
+                {
+                    "id": 1,
+                    "title": "Welcome Drink",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed eiusmod tempor incididunt",
+                    "icon": "fa-file-text-o"
+                },
+                {
+                    "id": 2,
+                    "title": "Bike Rental",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed eiusmod tempor incididunt",
+                    "icon": "fa-clone"
+                },
+                {
+                    "id": 3,
+                    "title": "WIFI Areas",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed eiusmod tempor incididunt",
+                    "icon": "fa-trophy"
+                },
+                {
+                    "id": 4,
+                    "title": "Swimming Pool",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed eiusmod tempor incididunt",
+                    "icon": "fa-bullseye"
+                }
+            ]
+        },
+        "stats": {
+            "title": "We have a great funfact! Relax & Enjoy your Holiday",
+            "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, soluta impedit. Consequatur, quasi mollitia? Adipisci exercitationem amet dolore expedita repudiandae voluptatem impedit ipsa vero repellendus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio molestiae ex aut possimus atque explicabo nostrum recusandae ab quisquam at!",
+            "items": [
+                {
+                    "id": 1,
+                    "icon": "fa-users",
+                    "title": "1200+",
+                    "description": "Happy clients"
+                },
+                {
+                    "id": 2,
+                    "icon": "fa-users",
+                    "title": "1200+",
+                    "description": "Happy clients"
+                },
+                {
+                    "id": 3,
+                    "icon": "fa-users",
+                    "title": "1200+",
+                    "description": "Happy clients"
+                },
+                {
+                    "id": 4,
+                    "icon": "fa-users",
+                    "title": "1200+",
+                    "description": "Happy clients"
+                }
+            ]
+        }
+    },
+    "services": {
+        "services": {
+            "title": "Luxury Hotel Services",
+            "text": "Our rooms are beautifully designed and comfortable and can accommodate various groups of travelers. All rooms have private bathrooms, a flat-screen TV and a safe.",
+            "cards": [
+                {
+                    "id": 1,
+                    "title": "Swimming Pool",
+                    "subtitle": "Fitness Zone",
+                    "description": "Lorem ipsum dolor sit amet elit. Id, minima. It is a long fact that a reader will be distracted by the readable.",
+                    "icon": "fa-bed"
+                },
+                {
+                    "id": 2,
+                    "title": "Swimming Pool",
+                    "subtitle": "Fitness Zone",
+                    "description": "Lorem ipsum dolor sit amet elit. Id, minima. It is a long fact that a reader will be distracted by the readable.",
+                    "icon": "fa-bed"
+                },
+                {
+                    "id": 3,
+                    "title": "Swimming Pool",
+                    "subtitle": "Fitness Zone",
+                    "description": "Lorem ipsum dolor sit amet elit. Id, minima. It is a long fact that a reader will be distracted by the readable.",
+                    "icon": "fa-bed"
+                },
+                {
+                    "id": 4,
+                    "title": "Swimming Pool",
+                    "subtitle": "Fitness Zone",
+                    "description": "Lorem ipsum dolor sit amet elit. Id, minima. It is a long fact that a reader will be distracted by the readable.",
+                    "icon": "fa-bed"
+                },
+                {
+                    "id": 5,
+                    "title": "Swimming Pool",
+                    "subtitle": "Fitness Zone",
+                    "description": "Lorem ipsum dolor sit amet elit. Id, minima. It is a long fact that a reader will be distracted by the readable.",
+                    "icon": "fa-bed"
+                }
+            ]
+        },
+        "facilities": {
+            "title": "Our Hotel Facilities",
+            "imagePath": "/src/images/facilities.jpg",
+            "items": [
+                {
+                    "id":1,
+                    "title":"TV",
+                    "description":"Satellite",
+                    "icon": "fa-television"
+                },
+                {
+                    "id":2,
+                    "title":"TV",
+                    "description":"Satellite",
+                    "icon": "fa-television"
+                },
+                {
+                    "id":3,
+                    "title":"TV",
+                    "description":"Satellite",
+                    "icon": "fa-television"
+                },
+                {
+                    "id":4,
+                    "title":"TV",
+                    "description":"Satellite",
+                    "icon": "fa-television"
+                }
+            ]
         }
     }
 }

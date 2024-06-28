@@ -1,0 +1,35 @@
+---
+interface Props {
+  title: string;
+  items: {
+    id: number;
+    icon: string;
+    title: string;
+    description: string;
+  }[];
+}
+
+import StatItem from "./StatItem.astro";
+
+const { title, items } = Astro.props;
+---
+
+<section class="w3l-stats">
+  <div class="main-w3 py-5">
+    <div class="container py-lg-3">
+      <div class="row align-items-center">
+        <div class="col-lg-6 title">
+          <h3 class="title-big">
+            {title}
+          </h3>
+          <slot />
+        </div>
+        <div class="col-lg-6 main-cont-wthree-fea text-center">
+          <div class="row">
+            {items.map((item) => <StatItem item={item} />)}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

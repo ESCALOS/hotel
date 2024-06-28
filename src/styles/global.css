@@ -9837,7 +9837,7 @@ h3.title-big {
   -ms-transition: 0.3s ease-in; }
 
 .w3l-main-slider .banner-view {
-  background: url(../images/slide1.jpg) no-repeat center;
+  background: url(../images/slide1.webp) no-repeat center;
   background-size: cover;
   min-height: 700px;
   position: relative;
@@ -9846,15 +9846,19 @@ h3.title-big {
   align-items: center; }
 
 .w3l-main-slider .banner-top1 {
-  background: url(../images/slide2.jpg) no-repeat center;
+  background: url(../images/slide2.webp) no-repeat center;
   background-size: cover; }
 
 .w3l-main-slider .banner-top2 {
-  background: url(../images/slide3.jpg) no-repeat center;
+  background: url(../images/slide3.webp) no-repeat center;
   background-size: cover; }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/slide4.jpg) no-repeat center;
+  background: url(../images/slide4.webp) no-repeat center;
+  background-size: cover; }
+
+.w3l-main-slider .banner-top4 {
+  background: url(../images/slide5.webp) no-repeat center;
   background-size: cover; }
 
 .w3l-main-slider .banner-view:before {
@@ -11222,7 +11226,7 @@ div#small-dialog iframe {
 
 .w3-about-2 .w3-services-ab {
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), black), url(../images/slide1.jpg);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), black), url(../images/slide2.webp);
   background-repeat: no-repeat, no-repeat, no-repeat; }
 
 .w3-about-2 .fea-gd-vv h5 {

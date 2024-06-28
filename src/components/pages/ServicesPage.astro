@@ -1,11 +1,24 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { getI18N } from "@/i18n";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Cards from "../Cards.astro";
+import Stats from "../Stats.astro";
+import ImageCustom from "@/components/ImageCustom.astro";
 
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
+
+const { services, facilities } = i18n.services;
 ---
 
 <Layout title={i18n.META_TITLE} description={i18n.META_DESCRIPTION}>
-  <h1>Servicios</h1>
+  <Breadcrumb />
+  <Cards items={services.cards}>
+    <h3 class="title-small">{services.title}</h3>
+    <p>{services.text}</p>
+  </Cards>
+  <Stats title={facilities.title} items={facilities.items}>
+    <ImageCustom imagePath={facilities.imagePath} />
+  </Stats>
 </Layout>

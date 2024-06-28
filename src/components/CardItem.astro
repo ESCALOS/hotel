@@ -1,0 +1,37 @@
+---
+interface Props {
+  item: {
+    id: number;
+    title: string;
+    subtitle: string;
+    description: string;
+    icon: string;
+  };
+}
+
+const {
+  item: { id, title, subtitle, description, icon },
+} = Astro.props;
+---
+
+<div
+  class:list={[
+    "col-lg-4 col-md-6  mt-4",
+    id === 1 ? "mt-md-0" : "",
+    id > 1 ? "mt-sm-5" : "",
+    id === 2 ? "mt-lg-0" : "",
+  ]}
+>
+  <div class="features-with-17-right-tp_sur">
+    <div class="features-with-17-left1">
+      <span class:list={["fa", icon]} aria-hidden="true"></span>
+    </div>
+    <div class="features-with-17-left2">
+      <h5>{subtitle}</h5>
+      <h6><a href="#url">{title}</a></h6>
+      <p>
+        {description}
+      </p>
+    </div>
+  </div>
+</div>

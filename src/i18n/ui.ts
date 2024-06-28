@@ -26,15 +26,17 @@ export const ui = {
 		'nav.inicio': 'Inicio',
 		'nav.nosotros': 'Nosotros',
 		'nav.servicios': 'Servicios',
-		'nav.contacto': 'Contacto',
-		'nav.reserva_ahora': 'Reserva ahora'
+		'nav.contactenos': 'Contáctenos',
+		'nav.reserva_ahora': 'Reserva ahora',
+		'nav.habitaciones': 'Habitaciones'
 	},
 	en: {
 		'nav.inicio': 'Home',
 		'nav.nosotros': 'About',
 		'nav.servicios': 'Services',
-		'nav.contacto': 'Contact',
-		'nav.reserva_ahora': 'Book Now'
+		'nav.contactenos': 'Contact us',
+		'nav.reserva_ahora': 'Book Now',
+		'nav.habitaciones': 'Rooms'
 	}
 } as const;
 
@@ -42,11 +44,13 @@ export const routes = {
 	es: {
 		nosotros: 'nosotros',
 		servicios: 'servicios',
-		contacto: 'contacto',
+		contactenos: 'contacto',
+		habitaciones: 'habitaciones'
 	},
 	en: {
 		nosotros: 'about',
 		servicios: 'services',
-		contacto: 'contact',
+		contactenos: 'contact-us',
+		habitaciones: 'rooms'
 	}
 };

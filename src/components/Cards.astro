@@ -1,0 +1,29 @@
+---
+interface Props {
+  items: {
+    id: number;
+    title: string;
+    subtitle: string;
+    description: string;
+    icon: string;
+  }[];
+}
+import CardItem from "./CardItem.astro";
+
+const { items } = Astro.props;
+---
+
+<section class="w3l-servicesblock1" id="service">
+  <div class="features-with-17_sur py-5">
+    <div class="container py-lg-5 py-sm-4">
+      <div class="features-with-17-top_sur">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 align-self">
+            <slot />
+          </div>
+          {items.map((item) => <CardItem item={item} />)}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

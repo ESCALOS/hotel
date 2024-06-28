@@ -1,0 +1,31 @@
+---
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+const pathname = Astro.url.pathname.split("/");
+const currentRoute = (lang === "es" ? pathname[1] : pathname[2]).replace(
+  "-",
+  " "
+);
+---
+
+<section class="w3l-breadcrumb">
+  <div class="breadcrum-bg py-sm-5 py-4">
+    <div class="container py-lg-3" style="text-transform: capitalize;">
+      <h2>
+        {currentRoute ? currentRoute : t("nav.inicio")}
+      </h2>
+      <p>
+        <a href={translatePath("/")}>{t("nav.inicio")}</a> &nbsp; / &nbsp; {
+          currentRoute ? currentRoute : t("nav.inicio")
+        }
+      </p>
+    </div>
+  </div>
+</section>
