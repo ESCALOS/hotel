@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+import { type CollectionEntry } from "astro:content";
+type Props = CollectionEntry<"room">["data"] & { slug: string };
+const { heroImage, title, text, slug } = Astro.props;
+---
+
+<div class="three-grids-columns" style="width: 100%;" transition:name={slug}>
+  <Image
+    src={heroImage}
+    alt=""
+    style="object-fit:cover; aspect-ratio:16/5; width:100%"
+    decoding="async"
+    loading="lazy"
+  />
+  <div class="info">
+    <h4><a href={`/habitaciones/${slug}`}>{title}</a></h4>
+    <p>
+      {text}
+    </p>
+    <a href={`/habitaciones/${slug}`} class="btn mt-4">Leer más </a>
+  </div>
+</div>

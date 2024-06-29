@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import { type CollectionEntry } from "astro:content";
+type Props = CollectionEntry<"room">["data"] & { slug: string };
+const { heroImage, title, text, slug } = Astro.props;
+---
+
+<div class="three-grids-columns" transition:name={slug}>
+  <Image
+    src={heroImage}
+    alt=""
+    style="object-fit:cover; aspect-ratio:16/5; width:100%"
+    decoding="async"
+    loading="lazy"
+  />
+  <div class="info">
+    <h4>{title}</h4>
+    <p>
+      {text}
+    </p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, accusamus
+    possimus tempore quia amet ea eius unde dignissimos beatae sed, totam blanditiis,
+    cum impedit laudantium libero fuga ab exercitationem? Quis? Tempore nam perspiciatis
+    vero harum, nisi praesentium fugit numquam quos odit nemo sequi unde ex voluptatem,
+    amet inventore? Deserunt possimus ullam quasi molestias iste dicta natus aperiam
+    cum quam hic! Sunt vel consequuntur nam iure provident quibusdam laudantium officia
+    saepe mollitia, veniam eaque corrupti corporis distinctio nemo ea optio neque
+    fugiat itaque tenetur id voluptatem recusandae dignissimos? Quae, quaerat odit!
+    Quia obcaecati tempora est incidunt nulla recusandae aperiam nobis debitis quaerat
+    provident, cumque nisi amet commodi nemo inventore velit consectetur dolore quos
+    asperiores nesciunt ab veritatis! Consequatur nihil asperiores soluta!
+  </div>
+</div>

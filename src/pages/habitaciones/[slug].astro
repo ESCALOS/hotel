@@ -1,0 +1,23 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import RoomMain from "@/components/RoomMain.astro";
+export const getStaticPaths = (async () => {
+  const rooms = await getCollection("room");
+  return rooms.map((room) => ({
+    params: {
+      slug: room.slug,
+    },
+    props: room,
+  }));
+}) satisfies GetStaticPaths;
+
+const room = Astro.props;
+---
+
+<Layout title={room.data.title}>
+  <div class="container py-xl-5 py-lg-3">
+    <RoomMain {...room.data} slug={room.slug} />
+  </div>
+</Layout>
