@@ -8,7 +8,6 @@ const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 import { getCollection } from "astro:content";
 const rooms = await getCollection("room");
-console.log(rooms);
 ---
 
 <Layout title={i18n.META_TITLE} description={i18n.META_DESCRIPTION}>
