@@ -1,0 +1,36 @@
+---
+interface Props {
+  item: {
+    id: number;
+    title: string;
+    text: string;
+    href: string;
+    icon: string;
+    target: boolean;
+  };
+}
+
+const {
+  item: { id, title, text, href, icon, target },
+} = Astro.props;
+---
+
+<div class:list={["cont-top", id > 1 ? "margin-up" : ""]}>
+  <div class="cont-left text-center">
+    <span class:list={["fa text-primary", icon]}></span>
+  </div>
+  <div class="cont-right">
+    <h6>{title}</h6>
+    <p>
+      {
+        href === "" ? (
+          text
+        ) : (
+          <a href={href} target={target ? "_blank" : "_self"}>
+            {text}
+          </a>
+        )
+      }
+    </p>
+  </div>
+</div>

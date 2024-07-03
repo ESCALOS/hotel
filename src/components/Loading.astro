@@ -10,7 +10,7 @@ import { Image } from "astro:assets";
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #72a34c;
+    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,5 +19,5 @@ import { Image } from "astro:assets";
 </style>
 
 <div class="loading-overlay">
-  <Image src={Logo} alt="Loading Logo" />
+  <Image src={Logo} height={250} alt="Loading Logo" />
 </div>
