@@ -7,11 +7,18 @@ import RoomItem from "@/components/RoomItem.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
 import { getCollection } from "astro:content";
-const rooms = await getCollection("room");
+const rooms =
+  currentLocale === "es"
+    ? await getCollection("room")
+    : await getCollection("roomEn");
 ---
 
 <Layout title={i18n.META_TITLE} description={i18n.META_DESCRIPTION}>
   <RoomList>
-    {rooms.map((room) => <RoomItem {...room.data} slug={room.slug} />)}
+    {
+      rooms.map((room) => (
+        <RoomItem {...room.data} slug={room.slug} body={room.body} />
+      ))
+    }
   </RoomList>
 </Layout>

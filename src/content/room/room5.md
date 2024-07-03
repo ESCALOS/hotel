@@ -1,7 +1,7 @@
 ---
 title: "Other Room"
 text: "lorem ipsum"
-heroImage: "../images/roommyk3.png"
+heroImage: "../images/roommyk5.png"
 tags:
   [
     { "title": "2 personas", "icon": "fa-users" },

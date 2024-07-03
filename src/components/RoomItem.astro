@@ -1,23 +1,39 @@
 ---
 import { Image } from "astro:assets";
+import { getI18N } from "@/i18n";
 import { type CollectionEntry } from "astro:content";
-type Props = CollectionEntry<"room">["data"] & { slug: string };
-const { heroImage, title, text, slug } = Astro.props;
+type Props = CollectionEntry<"room">["data"] & { slug: string; body: string };
+const { heroImage, title, tags, slug, body } = Astro.props;
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <div class="three-grids-columns" style="width: 100%;" transition:name={slug}>
   <Image
     src={heroImage}
     alt=""
-    style="object-fit:cover; aspect-ratio:16/5; width:100%"
+    style="object-fit:cover; width:100%"
+    height={450}
     decoding="async"
     loading="lazy"
   />
   <div class="info">
-    <h4><a href={`/habitaciones/${slug}`}>{title}</a></h4>
-    <p>
-      {text}
+    <h4><a href={slug}>{title}</a></h4>
+    <ul class="mb-3" style="list-style: none; display: flex; gap: 1rem">
+      {
+        tags.map((tag) => (
+          <li style="font-weight: 500; color: #888">
+            <span class:list={["fa", tag.icon]} style="color: #d1cebd" />
+            <span style="margin-left: .25rem;">{tag.title}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mb-3">
+      {body}
     </p>
-    <a href={`/habitaciones/${slug}`} class="btn mt-4">Leer más </a>
+    <a href="/" class="btn btn-style btn-primary">
+      {i18n.BOOK_NOW}
+    </a>
   </div>
 </div>

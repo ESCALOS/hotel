@@ -18,6 +18,6 @@ const room = Astro.props;
 
 <Layout title={room.data.title}>
   <div class="container py-xl-5 py-lg-3">
-    <RoomMain {...room.data} slug={room.slug} />
+    <RoomMain {...room.data} slug={room.slug} body={room.body} />
   </div>
 </Layout>

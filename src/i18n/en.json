@@ -2,12 +2,14 @@
     "META_TITLE": "Casa de Marlon y Karina - Tarapoto",
     "META_DESCRIPTION": "Book online safely at Casa de Marlon y Karina with discounted rates. We offer the best accommodation in Tarapoto. Cheapest rates available directly from us!",
     "GO_TO_TOP": "Go to top",
+    "BOOK_NOW": "Book now",
+    "SEE_MORE": "See more", 
     "home": {
         "about": {
             "title": "Relax in our Resort",
             "subtitle": "We make the best for all our customers.",
             "description": "aliquet leo. Mauris hendrerit vel ex. Quisque vitae luctus massa. Phasellus sed aliquam leo. Vestibulum ullamcorper a massa eu fringilla. Integer ultrices finibus sed nisi. in convallis felis dapibus sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, porro! Lorem ipsum dolor sit amet.",
-            "button": "Learn About Us"
+            "button": "See more"
         },
         "mainSlider": {
             "images": [
@@ -95,8 +97,8 @@
                     }
                 ],
                 "button": {
-                    "text": "Reserva ahora",
-                    "href": "/contacto/"
+                    "text": "See rooms",
+                    "href": "/habitaciones/"
                 }
             },
             "rooms": [
@@ -104,25 +106,25 @@
                     "id": 1,
                     "title": "Habitación familiar",
                     "price": "desde 20$",
-                    "imagePath": "/src/images/room2.jpg"
+                    "imagePath": "/src/images/room2.png"
                 },
                 {
                     "id": 2,
                     "title": "Habitación doble",
                     "price": "desde 20$",
-                    "imagePath": "/src/images/room3.jpg"
+                    "imagePath": "/src/images/room3.png"
                 },
                 {
                     "id": 3,
                     "title": "Habitación lujosa",
                     "price": "desde 20$",
-                    "imagePath": "/src/images/room4.jpg"
+                    "imagePath": "/src/images/room4.png"
                 },
                 {
                     "id": 4,
                     "title": "Habitación de descanso",
                     "price": "desde 20$",
-                    "imagePath": "/src/images/room5.jpg"
+                    "imagePath": "/src/images/room5.png"
                 }
             ]
         },
@@ -130,11 +132,11 @@
             "text": "Enjoy a Luxury experience. Discover our locaions. Relax and enjoy your holiday.",
             "buttonBook": {
                 "text": "Book now",
-                "href": "/contacto/"
+                "href": "/habitaciones/"
             },
             "buttonContactUs": {
                 "text": "Contact us",
-                "href": "/contacto/"
+                "href": "/contactenos/"
             }
         },
         "package": {

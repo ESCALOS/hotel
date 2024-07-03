@@ -1,11 +1,11 @@
 ---
 title: "Other Room"
 text: "lorem ipsum"
-heroImage: "../images/roommyk3.png"
+heroImage: "../images/roommyk5.png"
 tags:
   [
-    { "title": "2 personas", "icon": "fa-users" },
-    { "title": "2 camas", "icon": "fa-bed" },
+    { "title": "2 guests", "icon": "fa-users" },
+    { "title": "2 beds", "icon": "fa-bed" },
   ]
 ---
 

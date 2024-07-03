@@ -2,11 +2,13 @@
     "META_TITLE": "Casa de Marlon y Karina - Tarapoto",
     "META_DESCRIPTION": "Reserve en línea con seguridad en Casa de Marlon y Karina - Tarapoto con tarifas rebajadas",
     "GO_TO_TOP": "Ir al principio",
+    "SEE_MORE": "Ver más",
+    "BOOK_NOW": "Reservar ahora",
     "home": {
         "about": {
-            "title": "Relajese en nuestro Resort",
-            "subtitle": "Ofrecemos los mejor para nuestros clientes.",
-            "description": "Un texto en español",
+            "title": "Refugio, Naturaleza y Confort.",
+            "subtitle": "Descubre un espacio donde la tranquilidad y la naturaleza se encuentran en perfecta armonía.",
+            "description": "Inspirados en una de campo, minimalista y exponiendo la naturalidad de sus materiales, la Casa de Marlon y Karina ofrece un hábitat espacioso, tranquilo y fresco, rodeado de vegetación colindando con el área de conservación natural cordillera La Escalera. El melodioso sonido de las aves, el viento que mueve las ramas de los árboles y el de los sapitos al anochecer acompaña el merecido descanso luego una intensa jornada. A solo ocho minutos del centro de la ciudad la Casa de Marlon y Karina te ofrece el lugar donde podrás sentir la naturaleza de nuestra selva alta sin adentrarte en su espesura y teniendo a la mano cualquier servicio.",
             "button": "Ver más"
         },
         "mainSlider": {
@@ -95,8 +97,8 @@
                     }
                 ],
                 "button": {
-                    "text": "Reserva ahora",
-                    "href": "/contacto/"
+                    "text": "Ver habitaciones",
+                    "href": "/habitaciones/"
                 }
             },
             "rooms": [
@@ -104,25 +106,25 @@
                     "id": 1,
                     "title": "Habitación familiar",
                     "price": "desde 20$",
-                    "imagePath": "/src/images/room2.jpg"
+                    "imagePath": "/src/images/room2.png"
                 },
                 {
                     "id": 2,
                     "title": "Habitación doble",
                     "price": "desde 20$",
-                    "imagePath": "/src/images/room3.jpg"
+                    "imagePath": "/src/images/room3.png"
                 },
                 {
                     "id": 3,
                     "title": "Habitación lujosa",
                     "price": "desde 20$",
-                    "imagePath": "/src/images/room4.jpg"
+                    "imagePath": "/src/images/room4.png"
                 },
                 {
                     "id": 4,
                     "title": "Habitación de descanso",
                     "price": "desde 20$",
-                    "imagePath": "/src/images/room5.jpg"
+                    "imagePath": "/src/images/room5.png"
                 }
             ]
         },
@@ -130,11 +132,11 @@
             "text": "Disfruta de una experiencia de lujo. Descubre nuestras ubicaciones. Relájate y disfruta de tus vacaciones.",
             "buttonBook": {
                 "text": "Reserva ahora",
-                "href": "/contacto/"
+                "href": "/habitaciones/"
             },
             "buttonContactUs": {
                 "text": "Contáctanos",
-                "href": "/contacto/"
+                "href": "/contactenos/"
             }
         },
         "package": {
