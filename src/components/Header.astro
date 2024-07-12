@@ -25,10 +25,10 @@ const translatePath = useTranslatedPath(lang);
         />
       </a>
       <NavbarToggle />
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <HeaderLink name={t("nav.inicio")} href={translatePath("/")} />
+          <HeaderLink name={t("nav.nosotros")} href="#about" />
           <HeaderLink
             name={t("nav.habitaciones")}
             href={translatePath("/habitaciones/")}
@@ -36,10 +36,6 @@ const translatePath = useTranslatedPath(lang);
           <HeaderLink
             name={t("nav.servicios")}
             href={translatePath("/servicios/")}
-          />
-          <HeaderLink
-            name={t("nav.nosotros")}
-            href={translatePath("/nosotros/")}
           />
           <HeaderLink
             name={t("nav.contactenos")}

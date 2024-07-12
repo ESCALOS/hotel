@@ -6,48 +6,27 @@
     "BOOK_NOW": "Reservar ahora",
     "home": {
         "about": {
-            "title": "Refugio, Naturaleza y Confort.",
-            "subtitle": "Descubre un espacio donde la tranquilidad y la naturaleza se encuentran en perfecta armonía.",
-            "description": "Inspirados en una de campo, minimalista y exponiendo la naturalidad de sus materiales, la Casa de Marlon y Karina ofrece un hábitat espacioso, tranquilo y fresco, rodeado de vegetación colindando con el área de conservación natural cordillera La Escalera. El melodioso sonido de las aves, el viento que mueve las ramas de los árboles y el de los sapitos al anochecer acompaña el merecido descanso luego una intensa jornada. A solo ocho minutos del centro de la ciudad la Casa de Marlon y Karina te ofrece el lugar donde podrás sentir la naturaleza de nuestra selva alta sin adentrarte en su espesura y teniendo a la mano cualquier servicio.",
-            "button": "Ver más"
-        },
-        "mainSlider": {
-            "images": [
+            "title": "Acerca de M&K House.",
+            "text": "Inspirados en una de campo, minimalista y exponiendo la naturalidad de sus materiales, la Casa de Marlon y Karina ofrece un hábitat espacioso, tranquilo y fresco, rodeado de vegetación colindando con el área de conservación natural cordillera La Escalera. El melodioso sonido de las aves, el viento que mueve las ramas de los árboles y el de los sapitos al anochecer acompaña el merecido descanso luego una intensa jornada. A solo ocho minutos del centro de la ciudad la Casa de Marlon y Karina te ofrece el lugar donde podrás sentir la naturaleza de nuestra selva alta sin adentrarte en su espesura y teniendo a la mano cualquier servicio.",
+            "rooms": [
                 {
-                    "title":
-                      "Inspirados en una casa de campo, minimalista y exponiendo la naturalidad de sus materiales",
-                    "button": "Nuestros servicios",
-                    "href": "/servicios/",
-                    "imageClass": ""
-                  },
-                  {
-                    "title":
-                      "A solo ocho minutos del centro de la ciudad.",
-                    "button": "Nuestros servicios",
-                    "href": "/servicios/",
-                    "imageClass": "banner-top1"
-                  },
-                  {
-                    "title":
-                      "Con cinco amplias habitaciones, un tranquilo y acogedor jardín, una amplia sala, comedor y cocina.",
-                    "button": "Nuestros servicios",
-                    "href": "/servicios/",
-                    "imageClass": "banner-top2"
-                  },
-                  {
-                    "title":
-                      "Ofrecemos un hábitat espacioso, tranquilo y fresco, rodeado de vegetación colindante con el área de conservación natural cordillera La Escalera.",
-                    "button": "Nuestros servicios",
-                    "href": "/servicios/",
-                    "imageClass": "banner-top3"
-                  },
-                  {
-                    "title":
-                      "Ofrecemos un hábitat espacioso, tranquilo y fresco, rodeado de vegetación colindante con el área de conservación natural cordillera La Escalera.",
-                    "button": "Nuestros servicios",
-                    "href": "/servicios/",
-                    "imageClass": "banner-top4"
-                  }
+                    "id": 1,
+                    "title": "Top Restaurant",
+                    "subtitle": "Breakfast and Dinner",
+                    "imagePath": "/src/images/about1.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Spa and Wellness",
+                    "subtitle": "Open Daily",
+                    "imagePath": "/src/images/about2.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Best Luxury Rooms",
+                    "subtitle": "Cool view",
+                    "imagePath": "/src/images/about3.jpg"
+                }
             ]
         },
         "availability": {
@@ -158,9 +137,8 @@
     },
     "about": {
         "bestRoom": {
-            "title": "Best luxury Hotel in London since 2000. Our hotel has been present for over 20 years.",
-            "text1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore sapiente, distinctio perferendis voluptas consequatur quaerat incidunt. Similique, officia! Dolorum fugiat et aliquam necessitatibus quas reiciendis, totam voluptatibus deleniti tempore doloribus dolor modi, ab facilis quam officiis ipsam doloremque.",
-            "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veritatis incidunt iste totam, consequuntur minus assumenda commodi sint asperiores. Voluptatibus incidunt alias.",
+            "title": "Acerca de M&K House.",
+            "text": "Inspirados en una de campo, minimalista y exponiendo la naturalidad de sus materiales, la Casa de Marlon y Karina ofrece un hábitat espacioso, tranquilo y fresco, rodeado de vegetación colindando con el área de conservación natural cordillera La Escalera. El melodioso sonido de las aves, el viento que mueve las ramas de los árboles y el de los sapitos al anochecer acompaña el merecido descanso luego una intensa jornada. A solo ocho minutos del centro de la ciudad la Casa de Marlon y Karina te ofrece el lugar donde podrás sentir la naturaleza de nuestra selva alta sin adentrarte en su espesura y teniendo a la mano cualquier servicio.",
             "rooms": [
                 {
                     "id": 1,

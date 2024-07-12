@@ -1,34 +1,15 @@
 ---
-import { getLangFromUrl, useTranslatedPath } from "@/i18n/utils";
-import { getI18N } from "@/i18n";
 import MainSliderItem from "./MainSliderItem.astro";
 
-const lang = getLangFromUrl(Astro.url);
-const translatePath = useTranslatedPath(lang);
-
-interface Carousel {
-  title: string;
-  button: string;
-  href: string;
-  imageClass: string;
-}
-
-const { currentLocale } = Astro;
-const i18n = getI18N({ currentLocale });
-const data: Carousel[] = i18n.home.mainSlider.images;
+const images = Array.from({ length: 8 }, (_, i) => i + 1);
 ---
 
 <section class="w3l-main-slider" id="home">
   <div class="companies20-content">
     <div class="owl-one owl-carousel owl-theme">
       {
-        data.map((item) => (
-          <MainSliderItem
-            title={item.title}
-            button={item.button}
-            href={translatePath(item.href)}
-            imageClass={item.imageClass}
-          />
+        images.map((i) => (
+          <MainSliderItem imageClass={i > 0 ? `banner-top${i}` : ""} />
         ))
       }
     </div>
